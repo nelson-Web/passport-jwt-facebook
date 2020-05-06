@@ -3,6 +3,13 @@ const passport = require("passport");
 const User = require('../models/user')
 const jwt = require('jsonwebtoken') //importamos el modulo para crear el token
 //rutas para facebook
+//rutas para facebook
+router.get(
+  "/auth/facebook",
+  passport.authenticate("sign-in-facebook", {
+    scope: ["email"],
+  })
+);
 
 router.get("/auth/facebook/callback",passport.authenticate("sign-in-facebook", { session: true }),
   function (req, res) {

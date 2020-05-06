@@ -16,8 +16,8 @@ passport.use(
   "sign-in-facebook",
   new FacebookStrategy(
     {
-      clientID: "tu cliente id",
-      clientSecret: "tu cliente secreto",
+      clientID: 2576357032629101111111117, // coloca tu propio clientID
+      clientSecret: "3af7d2f7630645b43ef7791111111c148e3ce8d",// coloca tu propio secret
       callbackURL: "http://localhost:3000/auth/facebook/callback",
       profileFields: ["email", "name", "photos","profileUrl"],
     },
@@ -43,8 +43,8 @@ passport.use(
   "sign-up-facebook",
   new FacebookStrategy(
     {
-      clientID: 2576357032629107,
-      clientSecret: "3af7d2f7630645b43ef779c148e3ce8d",
+      clientID: 2576357032629101111111117, // coloca tu propio clientID
+      clientSecret: "3af7d2f7630645b43ef7791111111c148e3ce8d",// coloca tu propio secret
       callbackURL: "http://localhost:3000/auth/facebook/signin",
       profileFields: ["email", "name", "photos"],
     },
