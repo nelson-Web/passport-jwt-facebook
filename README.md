@@ -13,4 +13,4 @@ git clone https://github.com/nelson-Web/passport-jwt-facebook
 cd backend/ && npm install
 cd frontend/ && npm install
 ```
-![captura](captura.png)
+![captura](Captura.png)
